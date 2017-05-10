@@ -10,12 +10,11 @@
 5. LineOrderTravelModel //订单出行人类
 6. LineOrderVerifyModel //订单验证类
 
- 其中所有的订单都继承在LineOrderBaseModel下
- LineOrderBaseModel 负责初始化和生成订单编号。
- LineOrderModel 生成订单的类继承于LineOrderBaseModel 直接获取自动生成的订单编号。
- LineOrderVerifyModel 订单验证类，在LineOrderModel中对其进行调用，这样做可以自由扩展验证条件，以及验证类。
- //最后生成定单通知订单信息模块以及出行人模块
- LineOrderDetailModel //订单信息模块
- LineOrderTravelModel //订单出行人信息模块
-
- 这样做可以保证系统的可用性以及拓展行。
+ 其中所有的订单都继承在LineOrderBaseModel下 <br />
+ LineOrderBaseModel 负责初始化和生成订单编号。 <br />
+ LineOrderModel 生成订单的类继承于LineOrderBaseModel 直接获取自动生成的订单编号。 <br />
+ LineOrderVerifyModel 订单验证类，在LineOrderModel中对其进行调用，这样做可以自由扩展验证条件，以及验证类。 <br />
+ //最后生成定单通知订单信息模块以及出行人模块 <br />
+ LineOrderDetailModel //订单信息模块 <br />
+ LineOrderTravelModel //订单出行人信息模块 <br />
+ 这样做可以保证系统的可用性以及扩展性。 <br />
